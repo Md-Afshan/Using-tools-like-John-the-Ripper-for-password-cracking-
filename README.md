@@ -20,7 +20,7 @@ Password Cracking with John the Ripper
 ## OUTPUT:
 ### Create an txt file 
 
-Right-click on the Desktop and choose Create Document → Empty Document.
+• Right-click on the Desktop and choose Create Document → Empty Document.
 
 • Name the file: anyname.txt
 
@@ -30,12 +30,11 @@ Right-click on the Desktop and choose Create Document → Empty Document.
 
 ### Create a Password-Protected ZIP File 
 
-Right-click on name.txt → Create Archive.
-Select .zip format.
+• Right-click on name.txt → Create Archive → Select .zip format.
 
 • Click Other Options, set a password (e.g., 1234), then click Create.
 
-A file named name.txt.zip will appear.
+• A file named name.txt.zip will appear.
 
 ![alt text](<LAB-7 IMG-3.png>)
 
@@ -46,7 +45,7 @@ A file named name.txt.zip will appear.
 
 ### Open John-The-Ripper Tool
 
-Click on the Kali menu or press the Super (Windows) key.
+• Click on the Kali menu or press the Super (Windows) key.
 
 
 • Search for “john” and click it — this opens the terminal with John the
@@ -58,7 +57,7 @@ Ripper installed.
 
 ### Generate Hash Using zip2john
 
-Run: “ls” command to confirm whether zip file is present
+• Run: “ls” command to confirm whether zip file is present
 
 ![alt text](<LAB-7 IMG-7.png>)
 
@@ -69,21 +68,21 @@ zip2john afshan.txt.zip > hash.txt
 ![alt text](<LAB-7 IMG-8.png>)
 
 
-- Type the command cat hash.txt or Open the file hash.txt
+• Type the command cat hash.txt or Open the file hash.txt
 
 ```
 cat hash.txt
 ```
-![alt text](<LAB-7 IMG-9.png>)
+![alt text](<LAB-7 IMG-10.png>)
 
 #### or
 
-Open hash.txt file
+• Open hash.txt file
 
-![alt text](<LAB-7 IMG-10.png>)
+![alt text](<LAB-7 IMG-9.png>)
 
 ### Start Cracking the Password
-Type the following command to crack the password:
+• Type the following command to crack the password:
 
 ```
 john --format=zip --mask=?d?d?d?d hash.txt
